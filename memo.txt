@@ -1,0 +1,41 @@
+#section_box("評価結果", 100%, auto)[ // 高さを auto に変更推奨
+  トピック類似度も感情分類も実データに近しい結果は得られなかった．しかし，感情分類ではフェーズが進むにつれてポジティブな感情の割合が増加する傾向が見られ，トピック類似度はペルソナの違いで類似度に差が見られた．
+
+  #v(5pt) // 本文と画像の間の余白
+
+  // 2列 x 3行 のグリッド
+  #grid(
+    columns: (1fr, 1fr), // 横2列
+    gutter: 5pt,         // 画像同士の間隔（適宜調整してください）
+
+    // --- 1行目 ---
+    [
+      #image("images\トランプ_sentiment.png", width: 1%)
+      #align(center)[#text(size: 9pt)[キャプション1]]
+    ],
+    [
+      #image("images\OpenAI_Blueky_vs_MOSAIC_sentiment.png", width: 1%)
+      #align(center)[#text(size: 9pt)[キャプション2]]
+    ],
+
+    // --- 2行目 ---
+    [
+      #image("images\関税_sentiment.png", width: 1%)
+      #align(center)[#text(size: 9pt)[キャプション3]]
+    ],
+    [
+      #image("images\DeepSeek_Blueky_vs_MOSAIC_sentiment.png", width: 1%)
+      #align(center)[#text(size: 9pt)[キャプション4]]
+    ],
+
+    // --- 3行目 ---
+    [
+      #image("images\高市_sentiment.png", width: 1%)
+      #align(center)[#text(size: 9pt)[キャプション5]]
+    ],
+    [
+      #image("images\Grok_Blueky_vs_MOSAIC_sentiment.png", width: 1%)
+      #align(center)[#text(size: 9pt)[キャプション6]]
+    ]
+  )
+]
